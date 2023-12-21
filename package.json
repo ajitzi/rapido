@@ -13,9 +13,11 @@
   ],
 
   "scripts": {
-    "run-front-web": "cd solito-app && yarn web",
+    "install-all-dependencies": "yarn install",
+    "front-init-android": "cd solito-app/apps/expo && yarn android",
+    "front-init-ios": "cd solito-app/apps/expo && yarn ios",
 
-    "run-front-android": "cd solito-app/apps/expo && yarn android",
-    "run-front-ios": "cd solito-app/apps/expo && yarn ios"
+    "front-run-web": "cd solito-app && yarn web",
+    "front-run-native": "cd solito-app && yarn native"
   }
 }
