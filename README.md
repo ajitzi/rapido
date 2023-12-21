@@ -1,0 +1,7 @@
+# 🏎️ Rapido
+
+## Description
+
+
+## Prerequisites
+- Docker

@@ -1,0 +1,16 @@
+{
+  "name": "rapido-app",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": [
+    "strapi-app",
+    "conector-api",
+    "solito-app"
+  ],
+
+  "scripts": {
+  },
+  "author": "Ajitzi Carmona <ajitzi.carmona@outlook.com>",
+  "license": "MIT"
+}

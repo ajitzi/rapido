@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "rapido-native-app",
+    "slug": "rapido-native-app",
+    "version": "1.0.0",
+    "scheme": "solito-expo-router",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "bundleIdentifier": "com.rapido.front"
+    },
+    "android": {
+      "package": "com.rapido.front"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
