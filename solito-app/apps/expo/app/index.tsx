@@ -1,6 +1,10 @@
 // index app
-import SplashScreen from '@gluestack/app/Login/SplashScreen'
+import SplashScreen from 'app/screens/SplashScreen'
+import HomeScreen from 'app/screens/home/HomeScreen'
 
-export default () => {
-  return <SplashScreen />
+const isAuthenticated = () => true
+
+const Screen = () => {
+  return isAuthenticated() ? <HomeScreen /> : <SplashScreen />
 }
+export default Screen

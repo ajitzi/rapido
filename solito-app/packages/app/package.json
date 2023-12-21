@@ -2,7 +2,6 @@
   "version": "0.1.0",
   "name": "app",
   "main": "index.ts",
-
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
     "lucide-react-native": "^0.291.0",

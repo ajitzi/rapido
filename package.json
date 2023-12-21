@@ -3,6 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "main": "index.js",
+  "author": "Ajitzi Carmona <ajitzi.carmona@outlook.com>",
+  "license": "MIT",
+
   "workspaces": [
     "strapi-app",
     "conector-api",
@@ -10,7 +13,9 @@
   ],
 
   "scripts": {
-  },
-  "author": "Ajitzi Carmona <ajitzi.carmona@outlook.com>",
-  "license": "MIT"
+    "run-front-web": "cd solito-app && yarn web",
+
+    "run-front-android": "cd solito-app/apps/expo && yarn android",
+    "run-front-ios": "cd solito-app/apps/expo && yarn ios"
+  }
 }
