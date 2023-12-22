@@ -2,10 +2,6 @@
   "name": "rapido-front",
   "private": true,
   "version": "0.1.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "resolutions": {
     "metro": "~0.76.7",
     "metro-resolver": "~0.76.7"
