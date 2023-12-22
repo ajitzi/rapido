@@ -1,19 +1,23 @@
 {
   "name": "rapido-app",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
-  "author": "Ajitzi Carmona <ajitzi.carmona@outlook.com>",
+  "author": "Ajitzi Carmona",
   "license": "MIT",
 
   "workspaces": [
     "strapi-app",
     "conector-api",
-    "solito-app"
+    "solito-app",
+    "solito-app/apps/*",
+    "solito-app/packages/app"
   ],
 
   "scripts": {
     "install-all-dependencies": "yarn install",
+    "clear-all-dependencies": "find . -name \"node_modules\" -type d -prune -exec rm -rf '{}' +\n",
+
     "front-init-android": "cd solito-app/apps/expo && yarn android",
     "front-init-ios": "cd solito-app/apps/expo && yarn ios",
 
