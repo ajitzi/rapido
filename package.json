@@ -16,7 +16,9 @@
 
   "scripts": {
     "install-all-dependencies": "yarn install",
-    "clear-all-dependencies": "find . -name \"node_modules\" -type d -prune -exec rm -rf '{}' +\n",
+    "clear-all-dependencies": "find . -name \"node_modules\" -type d -prune -exec rm -rf '{}' + && find . -name 'yarn.lock' -type f -exec rm -f '{}' +",
+    "clear-expo-builds": "cd solito-app/apps/expo && rm -rf .expo && rm -rf android && rm -rf ios",
+    "clear-next-builds": "cd solito-app/apps/next && rm -rf .next",
 
     "front-init-android": "cd solito-app/apps/expo && yarn android",
     "front-init-ios": "cd solito-app/apps/expo && yarn ios",
