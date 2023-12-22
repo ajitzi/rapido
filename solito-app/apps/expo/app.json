@@ -3,7 +3,7 @@
     "name": "rapido-native-app",
     "slug": "rapido-native-app",
     "version": "1.0.0",
-    "scheme": "solito-expo-router",
+    "scheme": "com-rapido-front",
     "platforms": ["ios", "android"],
     "ios": {
       "bundleIdentifier": "com.rapido.front"
