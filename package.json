@@ -1,10 +1,10 @@
 {
   "name": "rapido-app",
-  "private": true,
   "version": "0.1.0",
-  "main": "index.js",
   "author": "Ajitzi Carmona",
   "license": "MIT",
+  "main": "index.js",
+  "private": true,
 
   "workspaces": {
     "packages": [
@@ -16,7 +16,6 @@
     ],
     "nohoist": [
       "**/expo",
-      "**/expo/**",
       "**/expo-router",
       "**/expo-router/**"
     ]

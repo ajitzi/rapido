@@ -1,7 +1,7 @@
 {
   "name": "rapido-front",
-  "private": true,
   "version": "0.1.0",
+
   "resolutions": {
     "metro": "~0.76.7",
     "metro-resolver": "~0.76.7"
@@ -24,6 +24,7 @@
     "turbo": "^1.4.2",
     "typescript": "^5.2.2"
   },
+
   "scripts": {
     "native": "cd apps/expo && yarn start",
     "web": "cd apps/next && yarn next"
