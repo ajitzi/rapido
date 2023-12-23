@@ -15,6 +15,7 @@
   ],
   "nohoist": [
     "**/expo",
+    "**/expo/**",
     "**/expo-router",
     "**/expo-router/**"
   ],
