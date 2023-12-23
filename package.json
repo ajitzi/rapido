@@ -13,12 +13,6 @@
     "solito-app/apps/*",
     "solito-app/packages/app"
   ],
-  "nohoist": [
-    "**/expo",
-    "**/expo/**",
-    "**/expo-router",
-    "**/expo-router/**"
-  ],
 
   "scripts": {
     "install-all-dependencies": "yarn install",
