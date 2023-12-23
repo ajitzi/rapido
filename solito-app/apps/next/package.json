@@ -3,6 +3,7 @@
   "version": "0.1.0",
 
   "dependencies": {
+    "app": "*",
     "@expo/next-adapter": "5.0.2",
     "rapido-front": "workspace: *",
     "next": "^13.4.19",

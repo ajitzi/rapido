@@ -2,6 +2,7 @@
   "name": "expo-app",
   "version": "0.1.0",
   "dependencies": {
+    "app": "*",
     "rapido-front": "workspace: *",
     "expo": "^49.0.0",
     "expo-linear-gradient": "~12.3.0",
