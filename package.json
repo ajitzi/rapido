@@ -6,20 +6,21 @@
   "author": "Ajitzi Carmona",
   "license": "MIT",
 
-  "workspaces": [
-    "strapi-app",
-    "conector-api",
-    "solito-app",
-    "solito-app/apps/*",
-    "solito-app/packages/app"
-  ],
-  "nohoist": [
-    "**/uuid",
-    "**/expo",
-    "**/expo/**",
-    "**/expo-router",
-    "**/expo-router/**"
-  ],
+  "workspaces": {
+    "packages": [
+      "strapi-app",
+      "conector-api",
+      "solito-app",
+      "solito-app/apps/*",
+      "solito-app/packages/app"
+    ],
+    "nohoist": [
+      "**/expo",
+      "**/expo/**",
+      "**/expo-router",
+      "**/expo-router/**"
+    ]
+  },
 
   "scripts": {
     "install-all-dependencies": "yarn install",
