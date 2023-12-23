@@ -4,7 +4,7 @@
   "main": "index.ts",
 
   "dependencies": {
-    "app": "*",
+    "rapido-front": "workspace: *",
     "@hookform/resolvers": "^3.3.2",
     "lucide-react-native": "^0.291.0",
     "react-hook-form": "^7.47.0",

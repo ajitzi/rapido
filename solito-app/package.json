@@ -8,7 +8,6 @@
   },
 
   "dependencies": {
-    "app": "*",
     "@gluestack-style/react": "^1.0.15",
     "@gluestack-ui/config": "^1.0.3",
     "@gluestack-ui/themed": "^1.0.13",
