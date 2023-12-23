@@ -1,7 +1,6 @@
 {
-  "version": "0.1.0",
-  "private": true,
   "name": "expo-app",
+  "version": "0.1.0",
 
   "dependencies": {
     "app": "*",
