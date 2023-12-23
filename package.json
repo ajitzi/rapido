@@ -14,7 +14,7 @@
     "solito-app/packages/app"
   ],
   "nohoist": [
-    "uuid",
+    "**/uuid",
     "**/expo",
     "**/expo/**",
     "**/expo-router",
