@@ -6,10 +6,6 @@
     "metro": "~0.76.7",
     "metro-resolver": "~0.76.7"
   },
-  "nohoist": [
-    "**/expo-router",
-    "**/expo-router/**"
-  ],
 
   "dependencies": {
     "app": "*",
