@@ -1,0 +1,41 @@
+{
+  "name": "rapido-app",
+  "version": "1.0.0",
+  "author": "Ajitzi Carmona",
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+
+  "workspaces": {
+    "packages": [
+      "strapi-app",
+      "openapi-generator",
+      "solito-app",
+      "solito-app/apps/*",
+      "solito-app/packages/app"
+    ],
+    "nohoist": [
+      "**/expo",
+      "**/expo-router",
+      "**/expo-router/**"
+    ]
+  },
+
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.7.0"
+  },
+
+  "scripts": {
+    "install-all-dependencies": "yarn install",
+
+    "run-dev-back": "cd strapi-app && yarn develop",
+    "build-and-run-android": "cd solito-app/apps/expo && yarn android",
+    "build-and-run-ios": "cd solito-app/apps/expo && yarn ios",
+    "run-web": "cd solito-app && yarn web",
+    "run-native": "cd solito-app && yarn native",
+
+    "clear-all-dependencies": "find . -name \"node_modules\" -type d -prune -exec rm -rf '{}' + && find . -name 'yarn.lock' -type f -exec rm -f '{}' +",
+    "clear-expo-builds": "cd solito-app/apps/expo && rm -rf .expo && rm -rf android && rm -rf ios",
+    "clear-next-builds": "cd solito-app/apps/next && rm -rf .next"
+  }
+}
