@@ -1,6 +1,6 @@
 {
   "name": "rapido-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Ajitzi Carmona",
   "license": "MIT",
   "main": "index.js",
@@ -9,7 +9,7 @@
   "workspaces": {
     "packages": [
       "strapi-app",
-      "conector-api",
+      "openapi-generator",
       "solito-app",
       "solito-app/apps/*",
       "solito-app/packages/app"
