@@ -4,7 +4,7 @@ import SignIn from '@gluestack/app/auth/SignIn'
 
 const isAuthenticated = () => true
 const Screen = () => {
-  return isAuthenticated() ? <SignIn /> : <HomeScreen />
+  return isAuthenticated() ? <HomeScreen /> : <SignIn />
 }
 
 export default Screen

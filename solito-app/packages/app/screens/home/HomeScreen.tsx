@@ -1,20 +1,11 @@
 import * as React from 'react'
-import {
-  Box,
-  Text,
-  VStack,
-  Button,
-  Image,
-  Center,
-  ButtonText,
-} from '@gluestack-ui/themed'
-
-import { Link } from 'solito/link'
+import {Box, Center,} from '@gluestack-ui/themed'
+import {H1, Text, Badge, H2, Card} from "app/components/library";
 import GuestLayout from '../../layouts/GuestLayout'
+import {Camera} from "lucide-react-native";
 
 export default function HomeScreen() {
   return (
-    // place GluestackUIProvider in your app root accordingly
     <GuestLayout>
       <Center w="$full" flex={1}>
         <Box
@@ -30,7 +21,11 @@ export default function HomeScreen() {
           px="$4"
           justifyContent="center"
         >
-          <Text>Hello World</Text>
+            <Card>
+                <H1 size={'sm'}>Hello</H1>
+                <Text>World</Text>
+                <Badge text={'Test'} icon={Camera} textProps={{mr: '$1'}}/>
+            </Card>
         </Box>
       </Center>
     </GuestLayout>
