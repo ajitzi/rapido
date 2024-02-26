@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Box, StatusBar, ScrollView, VStack } from "@gluestack-ui/themed";
 
 type GuestLayoutProps = {
