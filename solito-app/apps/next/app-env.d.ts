@@ -1,1 +1,1 @@
-/// <reference types="app/rnw-overrides" />
+/// <reference badge-text="app/rnw-overrides" />

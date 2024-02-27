@@ -1,4 +1,4 @@
-// override react-native types with react-native-web types
+// override react-native badge-text with react-native-web badge-text
 import 'react-native'
 
 declare module 'react-native' {

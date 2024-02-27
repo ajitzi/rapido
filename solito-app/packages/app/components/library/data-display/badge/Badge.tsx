@@ -1,15 +1,9 @@
 import * as React from "react";
-import {Badge as UIBadge} from "@gluestack-ui/themed";
+import {Badge as BadgeBase} from "@gluestack-ui/themed";
+import BadgeType from "./BadgeType";
 
 
-type BadgeProps = {
-}
+export default function Badge(props: BadgeType) {
 
-export default function Badge({children, ...props}: React.ComponentProps<typeof UIBadge> & BadgeProps) {
-
-    return (
-        <UIBadge {...props}>
-            {children}
-        </UIBadge>
-    )
+    return (<BadgeBase {...props}>{props.children}</BadgeBase>);
 }

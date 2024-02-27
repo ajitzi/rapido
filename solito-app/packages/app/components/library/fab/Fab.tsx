@@ -1,11 +1,8 @@
 import * as React from "react";
-import {Fab as UIFab} from "@gluestack-ui/themed";
+import {Fab as FabBase} from "@gluestack-ui/themed";
+import FabType from "./FabType";
 
-export default function Fab({children, ...props}: React.ComponentProps<typeof UIFab>) {
+export default function Fab(props: FabType) {
 
-    return (
-        <UIFab {...props}>
-            {children}
-        </UIFab>
-    )
+    return (<FabBase {...props}>{props.children}</FabBase>);
 }

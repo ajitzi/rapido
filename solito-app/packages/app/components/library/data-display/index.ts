@@ -1,2 +1,2 @@
 export * from './badge'
-export {default as Card} from './Card'
+export * from './card'
