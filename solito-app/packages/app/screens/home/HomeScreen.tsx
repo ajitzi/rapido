@@ -1,33 +1,23 @@
 import * as React from 'react'
-import {Box, Center,} from '@gluestack-ui/themed'
-import {H1, Text, Badge, H2, Card} from "app/components/library";
+import {H1, Text, Badge, Card, Box, Center, VStack, HStack, Divider} from "app/components/library";
 import GuestLayout from '../../layouts/GuestLayout'
-import {Camera} from "lucide-react-native";
+import {ArchiveIcon, Camera, MessageCircle, PenTool} from "lucide-react-native";
+import {View} from "react-native";
 
 export default function HomeScreen() {
   return (
-    <GuestLayout>
-      <Center w="$full" flex={1}>
-        <Box
-          maxWidth={508}
-          w="$full"
-          minHeight={544}
-          sx={{
-            '@md': {
-              px: '$8',
-              bg: '$primary500',
-            },
-          }}
-          px="$4"
-          justifyContent="center"
-        >
-            <Card>
-                <H1 size={'sm'}>Hello</H1>
-                <Text>World</Text>
-                <Badge text={'Test'} icon={Camera} textProps={{mr: '$1'}}/>
-            </Card>
-        </Box>
-      </Center>
-    </GuestLayout>
+    <Center /*height={'$full'} sx={{_web: {height: '100vh'}}}*/>
+        <Card>
+            <H1 size={'sm'}>Hello</H1>
+            <Text>World</Text>
+            <HStack space={'xs'}>
+                <Badge text={'Test'} icon={PenTool} textProps={{mr: '$1'}}/>
+                <Divider orientation='vertical'/>
+                <Badge text={'Blah'} icon={MessageCircle} textProps={{mr: '$1'}}/>
+                <Divider orientation='vertical' />
+                <Badge text={'Quiniou'} icon={ArchiveIcon} textProps={{mr: '$1'}}/>
+            </HStack>
+        </Card>
+    </Center>
   )
 }
