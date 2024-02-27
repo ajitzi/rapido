@@ -1,3 +1,4 @@
+export * from './fab-icon'
+export * from './fab-label'
 export {default as Fab} from './Fab'
-export {default as FabIcon} from './fab-icon/FabIcon'
-export {default as FabLabel} from './fab-label/FabLabel'
+export {default as FabType} from './FabType'
