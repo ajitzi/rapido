@@ -26,6 +26,22 @@ import {
     AlertDialogBody,
     AlertDialogFooter,
     AlertDialogCloseButton,
+    ModalBackdrop,
+    Modal,
+    ModalHeader,
+    ModalContent,
+    ModalCloseButton,
+    ModalBody,
+    ModalFooter,
+    Popover,
+    PopoverBackdrop,
+    PopoverContent,
+    PopoverHeader,
+    PopoverCloseButton,
+    PopoverBody,
+    PopoverFooter,
+    TooltipText,
+    TooltipContent, Tooltip
 } from "app/components/library";
 
 import GuestLayout from '../../layouts/GuestLayout'
@@ -107,23 +123,17 @@ export default function HomeScreen() {
             </VStack>
         </Toast>
 
-        <AlertDialog isOpen={false}>
-            <AlertDialogBackdrop></AlertDialogBackdrop>
-            <AlertDialogContent>
-                <AlertDialogHeader>
-                    <Text>Header</Text>
-                    <AlertDialogCloseButton>
-                        <Icon as={CloseIcon} />
-                    </AlertDialogCloseButton>
-                </AlertDialogHeader>
-                <AlertDialogBody>
-                    <Text>Content</Text>
-                </AlertDialogBody>
-                <AlertDialogFooter>
-                    <Text>Footer</Text>
-                </AlertDialogFooter>
-            </AlertDialogContent>
-        </AlertDialog>
+        <Tooltip placement={'right'} trigger={(triggerProps) => {
+            return (
+                <Button {...triggerProps}>
+                    <ButtonText>Popover</ButtonText>
+                </Button>
+            )
+        }}>
+            <TooltipContent>
+                <TooltipText>Hello, this is a tooltip !</TooltipText>
+            </TooltipContent>
+        </Tooltip>
     </>
   )
 }
