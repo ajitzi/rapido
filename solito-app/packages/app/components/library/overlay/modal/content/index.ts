@@ -1,0 +1,5 @@
+export {default as ModalDialogBody} from './ModalBody'
+export {default as ModalDialogCloseButton} from './ModalCloseButton'
+export {default as ModalDialogContent} from './ModalContent'
+export {default as ModalDialogFooter} from './ModalFooter'
+export {default as ModalDialogHeader} from './ModalHeader'

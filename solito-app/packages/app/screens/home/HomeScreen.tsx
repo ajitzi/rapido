@@ -1,16 +1,46 @@
 import * as React from 'react'
 import {
-    H1, Text,
+    H1,
+    Text,
     Card,
-    Badge, BadgeIcon, BadgeText,
-    Box, Center, VStack, HStack, Divider,
-    Alert, AlertIcon, AlertText, Progress, ProgressFilledTrack, Spinner, Toast, ToastTitle,
+    Badge,
+    BadgeIcon,
+    BadgeText,
+    Box,
+    Center,
+    VStack,
+    HStack,
+    Divider,
+    Alert,
+    AlertIcon,
+    AlertText,
+    Progress,
+    ProgressFilledTrack,
+    Spinner,
+    Toast,
+    ToastTitle,
+    AlertDialog,
+    AlertDialogBackdrop,
+    AlertDialogContent,
+    AlertDialogHeader,
+    AlertDialogBody,
+    AlertDialogFooter,
+    AlertDialogCloseButton,
 } from "app/components/library";
 
 import GuestLayout from '../../layouts/GuestLayout'
-import {AlertCircle, ArchiveIcon, Camera, FileWarning, MessageCircle, PenTool} from "lucide-react-native";
+import {
+    AlertCircle,
+    ArchiveIcon,
+    Camera,
+    FileWarning,
+    GlobeIcon,
+    MessageCircle, PaintBucket,
+    PenTool, Plus,
+    PuzzleIcon, SettingsIcon
+} from "lucide-react-native";
 import {View} from "react-native";
-import {ToastDescription} from "@gluestack-ui/themed";
+import {Button, ButtonText, CloseIcon, Icon, ToastDescription} from "@gluestack-ui/themed";
 
 
 export default function HomeScreen() {
@@ -76,6 +106,24 @@ export default function HomeScreen() {
                 <ToastDescription>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur explicabo harum possimus praesentium quaerat saepe, sit! Aliquam assumenda repellat ullam. Eaque eum hic minus nisi quis! Amet at molestias nesciunt!</ToastDescription>
             </VStack>
         </Toast>
+
+        <AlertDialog isOpen={false}>
+            <AlertDialogBackdrop></AlertDialogBackdrop>
+            <AlertDialogContent>
+                <AlertDialogHeader>
+                    <Text>Header</Text>
+                    <AlertDialogCloseButton>
+                        <Icon as={CloseIcon} />
+                    </AlertDialogCloseButton>
+                </AlertDialogHeader>
+                <AlertDialogBody>
+                    <Text>Content</Text>
+                </AlertDialogBody>
+                <AlertDialogFooter>
+                    <Text>Footer</Text>
+                </AlertDialogFooter>
+            </AlertDialogContent>
+        </AlertDialog>
     </>
   )
 }
