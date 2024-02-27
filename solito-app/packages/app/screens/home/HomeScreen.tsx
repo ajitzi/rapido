@@ -41,14 +41,21 @@ import {
     PopoverBody,
     PopoverFooter,
     TooltipText,
-    TooltipContent, Tooltip
+    TooltipContent,
+    Tooltip,
+    Accordion,
+    AccordionItem,
+    AccordionHeader,
+    AccordionTrigger,
+    AccordionTitleText,
+    AccordionIcon, AccordionContentText, AccordionContent
 } from "app/components/library";
 
 import GuestLayout from '../../layouts/GuestLayout'
 import {
     AlertCircle,
     ArchiveIcon,
-    Camera,
+    Camera, ChevronDownIcon, ChevronUpIcon,
     FileWarning,
     GlobeIcon,
     MessageCircle, PaintBucket,
@@ -134,6 +141,68 @@ export default function HomeScreen() {
                 <TooltipText>Hello, this is a tooltip !</TooltipText>
             </TooltipContent>
         </Tooltip>
+
+        <Accordion
+            m="$5"
+            width="90%"
+            size="md"
+            variant="filled"
+            type="single"
+            isCollapsible={true}
+            isDisabled={false}
+        >
+            <AccordionItem value="a">
+                <AccordionHeader>
+                    <AccordionTrigger>
+                        {({ isExpanded }) => {
+                            return (
+                                <>
+                                    <AccordionTitleText>How do I place an order?</AccordionTitleText>
+                                    {isExpanded ? (
+                                        <AccordionIcon as={ChevronUpIcon} ml="$3" />
+                                    ) : (
+                                        <AccordionIcon as={ChevronDownIcon} ml="$3" />
+                                    )}
+                                </>
+                            )
+                        }}
+                    </AccordionTrigger>
+                </AccordionHeader>
+                <AccordionContent>
+                    <AccordionContentText>
+                        To place an order, simply select the products you want, proceed to
+                        checkout, provide shipping and payment information, and finalize your
+                        purchase.
+                    </AccordionContentText>
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="b">
+                <AccordionHeader>
+                    <AccordionTrigger>
+                        {({ isExpanded }) => {
+                            return (
+                                <>
+                                    <AccordionTitleText>
+                                        What payment methods do you accept?
+                                    </AccordionTitleText>
+                                    {isExpanded ? (
+                                        <AccordionIcon as={ChevronUpIcon} ml="$3" />
+                                    ) : (
+                                        <AccordionIcon as={ChevronDownIcon} ml="$3" />
+                                    )}
+                                </>
+                            )
+                        }}
+                    </AccordionTrigger>
+                </AccordionHeader>
+                <AccordionContent>
+                    <AccordionContentText>
+                        We accept all major credit cards, including Visa, Mastercard, and
+                        American Express. We also support payments through PayPal.
+                    </AccordionContentText>
+                </AccordionContent>
+            </AccordionItem>
+        </Accordion>
     </>
   )
 }

@@ -1,5 +1,5 @@
 export * from './data-display'
-// export * from './disclosure'
+export * from './disclosure'
 export * from './feedback'
 // export * from './form'
 export * from './layout'
