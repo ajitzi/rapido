@@ -4,12 +4,13 @@ import {
     Card,
     Badge, BadgeIcon, BadgeText,
     Box, Center, VStack, HStack, Divider,
-    Alert, AlertIcon, AlertText, Progress, ProgressFilledTrack, Spinner,
+    Alert, AlertIcon, AlertText, Progress, ProgressFilledTrack, Spinner, Toast, ToastTitle,
 } from "app/components/library";
 
 import GuestLayout from '../../layouts/GuestLayout'
-import {ArchiveIcon, Camera, FileWarning, MessageCircle, PenTool} from "lucide-react-native";
+import {AlertCircle, ArchiveIcon, Camera, FileWarning, MessageCircle, PenTool} from "lucide-react-native";
 import {View} from "react-native";
+import {ToastDescription} from "@gluestack-ui/themed";
 
 
 export default function HomeScreen() {
@@ -64,10 +65,17 @@ export default function HomeScreen() {
 
         </Center>
 
-        <Alert action={'error'}>
-            <AlertIcon mr={"$4"} as={Camera}/>
+        <Alert variant="accent" action={'error'}>
+            <AlertIcon mr={"$4"} as={AlertCircle}/>
             <AlertText>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ullam, voluptas. Adipisci architecto, aspernatur autem beatae doloremque nobis omnis quis rem. Aliquam aperiam doloremque eius fugiat harum illum in reprehenderit.</AlertText>
         </Alert>
+
+        <Toast>
+            <VStack space={'sm'} maxWidth={'100%'}>
+                <ToastTitle>Hello</ToastTitle>
+                <ToastDescription>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur explicabo harum possimus praesentium quaerat saepe, sit! Aliquam assumenda repellat ullam. Eaque eum hic minus nisi quis! Amet at molestias nesciunt!</ToastDescription>
+            </VStack>
+        </Toast>
     </>
   )
 }
