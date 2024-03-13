@@ -1,5 +1,0 @@
-export {default as Avatar}  from './Avatar'
-export {default as AvatarBadge}  from './AvatarBadge'
-export {default as AvatarFallbackText}  from './AvatarFallbackText'
-export {default as AvatarGroup}  from './AvatarGroup'
-export {default as AvatarImage}  from './AvatarImage'

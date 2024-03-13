@@ -1,5 +1,0 @@
-export {default as Box} from './Box'
-export {default as Center} from './Center'
-export {default as Divider} from './Divider'
-export {default as HStack} from './HStack'
-export {default as VStack} from './VStack'

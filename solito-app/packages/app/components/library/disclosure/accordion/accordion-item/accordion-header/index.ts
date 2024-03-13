@@ -1,5 +1,0 @@
-export * from './accordion-icon'
-export * from './accordion-title-text'
-export * from './accordion-trigger'
-export {default as AccordionHeader} from './AccordionHeader'
-export {default as AccordionHeaderType} from './AccordionHeaderType'

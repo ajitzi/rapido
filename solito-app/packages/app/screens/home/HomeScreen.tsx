@@ -84,7 +84,7 @@ import {
     Textarea,
     TextareaInput,
     FormControlHelper, FormControlHelperText
-} from "app/components/library";
+} from "../../library";
 
 import GuestLayout from '../../layouts/GuestLayout'
 import {
