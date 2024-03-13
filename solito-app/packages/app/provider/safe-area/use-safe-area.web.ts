@@ -16,7 +16,7 @@ const area = {
   top: 0,
 
   // you could also use CSS env variables like below:
-  // but you'll have to be sure to override the types for `useSafeArea`
+  // but you'll have to be sure to override the badge-text for `useSafeArea`
   // and make sure to never add numbers and strings when you consue useSafeArea
   // just keep in mind that the env() doesn't work on older browsers I think
 
