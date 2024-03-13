@@ -1,15 +1,9 @@
 import * as React from "react";
-import {Switch as UISwitch} from "@gluestack-ui/themed";
+import {Switch as SwitchBase} from "@gluestack-ui/themed";
+import SwitchType from "./SwitchType";
 
+export default function Switch(props: SwitchType) {
 
-type SwitchProps = {
-}
-
-export default function Switch({children, ...props}: React.ComponentProps<typeof UISwitch> & SwitchProps) {
-
-    return (
-        <UISwitch {...props}>
-            {children}
-        </UISwitch>
-    )
+    // @ts-ignore
+    return <SwitchBase {...props}>{props.children}</SwitchBase>
 }

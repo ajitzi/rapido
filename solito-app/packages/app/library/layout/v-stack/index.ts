@@ -1,2 +1,2 @@
 export {default as VStack} from './VStack'
-export {default as VStackType} from './VStackType'
+export type {default as VStackType} from './VStackType'

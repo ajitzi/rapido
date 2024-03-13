@@ -1,2 +1,2 @@
 export {default as PopoverBackdrop} from './PopoverBackdrop'
-export {default as PopoverBackdropType} from './PopoverBackdropType'
+export type {default as PopoverBackdropType} from './PopoverBackdropType'

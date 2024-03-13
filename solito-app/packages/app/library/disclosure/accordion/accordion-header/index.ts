@@ -1,2 +1,2 @@
 export {default as AccordionHeader} from './AccordionHeader'
-export {default as AccordionHeaderType} from './AccordionHeaderType'
+export type {default as AccordionHeaderType} from './AccordionHeaderType'

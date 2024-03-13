@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import {
   Button,
   Checkbox,
@@ -140,8 +140,8 @@ const SignUpForm = () => {
   } = useForm<SignUpSchemaType>({
     resolver: zodResolver(signUpSchema),
   })
-  const [isEmailFocused, setIsEmailFocused] = useState(false)
-  const [pwMatched, setPwMatched] = useState(false)
+  const [isEmailFocused, setIsEmailFocused] = React.useState(false)
+  const [pwMatched, setPwMatched] = React.useState(false)
   const toast = useToast()
   const onSubmit = (_data: SignUpSchemaType) => {
     if (_data.password === _data.confirmpassword) {
@@ -175,8 +175,8 @@ const SignUpForm = () => {
     Keyboard.dismiss()
     handleSubmit(onSubmit)()
   }
-  const [showPassword, setShowPassword] = useState(false)
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false)
+  const [showPassword, setShowPassword] = React.useState(false)
+  const [showConfirmPassword, setShowConfirmPassword] = React.useState(false)
   const handleState = () => {
     setShowPassword((showState) => {
       return !showState

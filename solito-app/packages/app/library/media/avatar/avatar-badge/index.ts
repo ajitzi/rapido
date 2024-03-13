@@ -1,2 +1,2 @@
 export {default as AvatarBadge}  from './AvatarBadge'
-export {default as AvatarBadgeType}  from './AvatarBadgeType'
+export type {default as AvatarBadgeType}  from './AvatarBadgeType'

@@ -1,2 +1,2 @@
 export {default as AlertDialogHeader} from './AlertDialogHeader'
-export {default as AlertDialogHeaderType} from './AlertDialogHeaderType'
+export type {default as AlertDialogHeaderType} from './AlertDialogHeaderType'

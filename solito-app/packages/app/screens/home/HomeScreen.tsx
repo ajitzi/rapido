@@ -83,7 +83,7 @@ import {
     FormControlLabelText,
     Textarea,
     TextareaInput,
-    FormControlHelper, FormControlHelperText
+    FormControlHelper, FormControlHelperText, Input, InputField, InputIcon, InputSlot
 } from "../../library";
 
 import GuestLayout from '../../layouts/GuestLayout'
@@ -128,6 +128,12 @@ export default function HomeScreen() {
     return (
     <>
         <Center /*height={'$full'} sx={{_web: {height: '100vh'}}}*/>
+
+            <Badge>
+                <BadgeText mr={"auto"}>Hello</BadgeText>
+                <BadgeIcon as={Camera}/>
+            </Badge>
+
             <Card>
                 <H1 size={'sm'}>Hello</H1>
                 <Text>World</Text>
@@ -358,6 +364,17 @@ export default function HomeScreen() {
                 <FormControlHelperText>Start your story</FormControlHelperText>
             </FormControlHelper>
         </FormControl>
+
+        <Input>
+            <InputField />
+            <InputSlot>
+                <InputIcon as={CircleIcon}/>
+            </InputSlot>
+        </Input>
+
+        <Textarea>
+            <TextareaInput />
+        </Textarea>
     </>
   )
 }

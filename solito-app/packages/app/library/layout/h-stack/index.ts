@@ -1,2 +1,2 @@
 export {default as HStack} from './HStack'
-export {default as HStackType} from './HStackType'
+export type {default as HStackType} from './HStackType'

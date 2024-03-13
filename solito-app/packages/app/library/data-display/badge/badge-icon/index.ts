@@ -1,2 +1,2 @@
 export {default as BadgeIcon} from './BadgeIcon'
-export {default as BadgeIconType} from './BadgeIconType'
+export type {default as BadgeIconType} from './BadgeIconType'

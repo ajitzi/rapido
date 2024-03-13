@@ -1,2 +1,2 @@
 export {default as Accordion} from './Accordion'
-export {default as AccordionType} from './AccordionType'
+export type {default as AccordionType} from './AccordionType'

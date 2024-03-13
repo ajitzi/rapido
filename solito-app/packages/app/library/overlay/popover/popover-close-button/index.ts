@@ -1,2 +1,2 @@
 export {default as PopoverCloseButton} from './PopoverCloseButton'
-export {default as PopoverCloseButtonType} from './PopoverCloseButtonType'
+export type {default as PopoverCloseButtonType} from './PopoverCloseButtonType'

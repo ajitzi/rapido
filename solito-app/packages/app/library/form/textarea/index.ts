@@ -1,2 +1,2 @@
-export {default as Textarea} from './Textarea'
-export {default as TextareaInput} from './TextareaInput'
+export * from './textarea'
+export * from './textarea-input'

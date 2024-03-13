@@ -1,2 +1,2 @@
 export {default as PopoverFooter} from './PopoverFooter'
-export {default as PopoverFooterType} from './PopoverFooterType'
+export type {default as PopoverFooterType} from './PopoverFooterType'

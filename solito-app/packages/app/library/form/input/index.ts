@@ -1,4 +1,4 @@
-export {default as Input} from './Input'
-export {default as InputField} from './InputField'
-export {default as InputIcon} from './InputIcon'
-export {default as InputSlot} from './InputSlot'
+export * from './input'
+export * from './input-field'
+export * from './input-icon'
+export * from './input-slot'

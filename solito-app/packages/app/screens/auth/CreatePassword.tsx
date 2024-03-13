@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import {
   VStack,
   Box,
@@ -116,8 +116,8 @@ export default function CreatePassword() {
     handleSubmit(onSubmit)()
   }
 
-  const [showPassword, setShowPassword] = useState(false)
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false)
+  const [showPassword, setShowPassword] = React.useState(false)
+  const [showConfirmPassword, setShowConfirmPassword] = React.useState(false)
 
   const handleState = () => {
     setShowPassword((showState) => {

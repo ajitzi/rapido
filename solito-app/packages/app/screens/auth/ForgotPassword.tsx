@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import {
   Button,
   FormControl,
@@ -155,7 +155,7 @@ export default function ForgotPassword() {
   } = useForm<forgotPasswordSchemaType>({
     resolver: zodResolver(forgotPasswordSchema),
   })
-  const [isEmailFocused, setIsEmailFocused] = useState(false)
+  const [isEmailFocused, setIsEmailFocused] = React.useState(false)
 
   const router = useRouter()
   const toast = useToast()

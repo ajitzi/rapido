@@ -1,2 +1,2 @@
 export {default as ToastTitle} from './ToastTitle'
-export {default as ToastTitleType} from './ToastTitleType'
+export type {default as ToastTitleType} from './ToastTitleType'

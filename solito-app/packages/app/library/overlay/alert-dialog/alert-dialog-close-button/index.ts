@@ -1,2 +1,2 @@
 export {default as AlertDialogCloseButton} from './AlertDialogCloseButton'
-export {default as AlertDialogCloseButtonType} from './AlertDialogCloseButtonType'
+export type {default as AlertDialogCloseButtonType} from './AlertDialogCloseButtonType'

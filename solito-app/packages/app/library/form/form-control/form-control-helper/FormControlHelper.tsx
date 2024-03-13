@@ -1,15 +1,9 @@
 import * as React from "react";
-import {FormControlHelper as UIFormControlHelper} from "@gluestack-ui/themed";
+import {FormControlHelper as FormControlHelperBase} from "@gluestack-ui/themed";
+import FormControlHelperType from "./FormControlHelperType";
 
 
-type FormControlHelperProps = {
-}
+export default function FormControlHelper(props: FormControlHelperType) {
 
-export default function FormControlHelper({children, ...props}: React.ComponentProps<typeof UIFormControlHelper> & FormControlHelperProps) {
-
-    return (
-        <UIFormControlHelper {...props}>
-            {children}
-        </UIFormControlHelper>
-    )
+    return <FormControlHelperBase {...props}>{props.children}</FormControlHelperBase>
 }

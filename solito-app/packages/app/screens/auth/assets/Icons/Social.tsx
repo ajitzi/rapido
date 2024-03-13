@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { createIcon } from '@gluestack-ui/icon';
 import { Path, G } from 'react-native-svg';
 

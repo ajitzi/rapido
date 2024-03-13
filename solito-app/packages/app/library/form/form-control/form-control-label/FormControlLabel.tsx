@@ -1,15 +1,12 @@
 import * as React from "react";
-import {FormControlLabel as UIFormControlLabel} from "@gluestack-ui/themed";
+import {FormControlLabel as FormControlLabelBase} from "@gluestack-ui/themed";
+import FormControlLabelType from "./FormControlLabelType";
 
 
 type FormControlLabelProps = {
 }
 
-export default function FormControlLabel({children, ...props}: React.ComponentProps<typeof UIFormControlLabel> & FormControlLabelProps) {
+export default function FormControlLabel(props: FormControlLabelType) {
 
-    return (
-        <UIFormControlLabel {...props}>
-            {children}
-        </UIFormControlLabel>
-    )
+    return <FormControlLabelBase {...props}>{props.children}</FormControlLabelBase>
 }

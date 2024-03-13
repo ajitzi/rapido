@@ -1,2 +1,2 @@
 export {default as FormControlHelper} from './FormControlHelper'
-export {default as FormControlHelperText} from './FormControlHelperText'
+export type {default as FormControlHelperType} from './FormControlHelperType'

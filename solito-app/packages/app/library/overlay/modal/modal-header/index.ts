@@ -1,2 +1,2 @@
 export {default as ModalHeader} from './ModalHeader'
-export {default as ModalHeaderType} from './ModalHeaderType'
+export type {default as ModalHeaderType} from './ModalHeaderType'

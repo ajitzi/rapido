@@ -1,2 +1,2 @@
 export {default as Alert} from './Alert'
-export {default as AlertType} from './AlertType'
+export type {default as AlertType} from './AlertType'

@@ -1,2 +1,2 @@
 export {default as Popover} from './Popover'
-export {default as PopoverType} from './PopoverType'
+export type {default as PopoverType} from './PopoverType'

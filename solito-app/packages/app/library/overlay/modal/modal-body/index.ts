@@ -1,2 +1,2 @@
 export {default as ModalBody} from './ModalBody'
-export {default as ModalBodyBackdrop} from './ModalBodyType'
+export type {default as ModalBodyType} from './ModalBodyType'

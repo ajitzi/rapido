@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import * as React from 'react'
 import {
   VStack,
   Box,
@@ -80,11 +80,12 @@ function PinInput({
             maxLength={1}
             borderBottomWidth="$2"
             onChangeText={(text: string) => {
+              const nextRef = refList[index + 1];
               if (text.length === 1 && index < 5) {
-                refList[index + 1].current?.focus()
+                  nextRef?.current?.focus()
                 setInputFocus(index + 1)
               } else if (text.length === 0 && index > 0) {
-                refList[index - 1].current?.focus()
+                  nextRef?.current?.focus()
               }
 
               const updateOtpAtIndex = (index: number, value: string) => {
@@ -228,7 +229,7 @@ function ResendLink() {
         }}
         fontSize="$sm"
       >
-        Didn't receive the OTP?{' '}
+        Didn&apos;t receive the OTP?{' '}
       </Text>
       <Link href="#">
         <LinkText fontSize="$sm">RESEND OTP</LinkText>
@@ -251,13 +252,13 @@ export default function OtpVerification() {
     resolver: zodResolver(OTPSchema),
   })
 
-  const [otpInput, setOtpInput] = useState(['', '', '', '', '', ''])
-  const firstInput = useRef<HTMLInputElement>(null)
-  const secondInput = useRef<HTMLInputElement>(null)
-  const thirdInput = useRef<HTMLInputElement>(null)
-  const fourthInput = useRef<HTMLInputElement>(null)
-  const fifthInput = useRef<HTMLInputElement>(null)
-  const sixthInput = useRef<HTMLInputElement>(null)
+  const [otpInput, setOtpInput] = React.useState(['', '', '', '', '', ''])
+  const firstInput = React.useRef<HTMLInputElement>(null)
+  const secondInput = React.useRef<HTMLInputElement>(null)
+  const thirdInput = React.useRef<HTMLInputElement>(null)
+  const fourthInput = React.useRef<HTMLInputElement>(null)
+  const fifthInput = React.useRef<HTMLInputElement>(null)
+  const sixthInput = React.useRef<HTMLInputElement>(null)
 
   const refList = [
     firstInput,
@@ -268,8 +269,8 @@ export default function OtpVerification() {
     sixthInput,
   ]
 
-  const [inputFocus, setInputFocus] = useState<number>(-1)
-  const [validationError, setValidationError] = useState<string | null>(null)
+  const [inputFocus, setInputFocus] = React.useState<number>(-1)
+  const [validationError, setValidationError] = React.useState<string | null>(null)
 
   const router = useRouter()
   const toast = useToast()

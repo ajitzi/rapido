@@ -1,2 +1,2 @@
 export {default as AccordionIcon} from './AccordionIcon'
-export {default as AccordionIconType} from './AccordionIconType'
+export type {default as AccordionIconType} from './AccordionIconType'

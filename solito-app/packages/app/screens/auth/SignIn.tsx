@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import {
   Center,
   Button,
@@ -77,7 +77,7 @@ const SignInForm = () => {
   } = useForm<SignInSchemaType>({
     resolver: zodResolver(signInSchema),
   })
-  const [isEmailFocused, setIsEmailFocused] = useState(false)
+  const [isEmailFocused, setIsEmailFocused] = React.useState(false)
 
   const router = useRouter()
   const toast = useToast()
@@ -102,7 +102,7 @@ const SignInForm = () => {
     handleSubmit(onSubmit)()
   }
 
-  const [showPassword, setShowPassword] = useState(false)
+  const [showPassword, setShowPassword] = React.useState(false)
 
   const handleState = () => {
     setShowPassword((showState) => {

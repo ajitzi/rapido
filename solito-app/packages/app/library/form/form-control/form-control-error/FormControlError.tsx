@@ -1,15 +1,9 @@
 import * as React from "react";
-import {FormControlError as UIFormControlError} from "@gluestack-ui/themed";
+import {FormControlError as FormControlErrorBase} from "@gluestack-ui/themed";
+import FormControlErrorType from "./FormControlErrorType";
 
 
-type FormControlErrorProps = {
-}
+export default function FormControlError(props: FormControlErrorType) {
 
-export default function FormControlError({children, ...props}: React.ComponentProps<typeof UIFormControlError> & FormControlErrorProps) {
-
-    return (
-        <UIFormControlError {...props}>
-            {children}
-        </UIFormControlError>
-    )
+    return <FormControlErrorBase {...props}>{props.children}</FormControlErrorBase>
 }

@@ -1,2 +1,2 @@
 export {default as AlertDialogContent} from './AlertDialogContent'
-export {default as AlertDialogContentType} from './AlertDialogContentType'
+export type {default as AlertDialogContentType} from './AlertDialogContentType'

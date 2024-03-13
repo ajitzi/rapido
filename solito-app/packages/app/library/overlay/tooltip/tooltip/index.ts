@@ -1,2 +1,2 @@
 export {default as Tooltip} from './Tooltip'
-export {default as TooltipType} from './TooltipType'
+export type {default as TooltipType} from './TooltipType'

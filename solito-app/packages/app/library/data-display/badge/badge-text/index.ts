@@ -1,2 +1,2 @@
 export {default as BadgeText} from './BadgeText'
-export {default as BadgeTextType} from './BadgeTextType'
+export type {default as BadgeTextType} from './BadgeTextType'

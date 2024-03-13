@@ -1,15 +1,13 @@
 import * as React from "react";
-import {Pressable as UIPressable} from "@gluestack-ui/themed";
+import {Pressable as PressableBase} from "@gluestack-ui/themed";
+import PressableType from "./PressableType";
 
 
 type PressableProps = {
 }
 
-export default function Pressable({children, ...props}: React.ComponentProps<typeof UIPressable> & PressableProps) {
+export default function Pressable(props: PressableType) {
 
-    return (
-        <UIPressable {...props}>
-            {children}
-        </UIPressable>
-    )
+    // @ts-ignore
+    return <PressableBase {...props}>{props.children}</PressableBase>
 }

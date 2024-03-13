@@ -1,2 +1,2 @@
 export {default as AlertText} from './AlertText'
-export {default as AlertTextType} from './AlertTextType'
+export type {default as AlertTextType} from './AlertTextType'
